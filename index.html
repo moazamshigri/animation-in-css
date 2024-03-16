@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in Css</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @keyframes harry1 {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            background-color: grey;
+            height: 23px;
+            width: 420px;
+        }
+
+        .box {
+            background-color: black;
+            height: 18px;
+            width: 10px;
+            position: relative;
+            margin: 0 3px 0 3px;
+            /* animation-name: harry1; */
+            /* animation-duration: 3s; */
+            /* animation-iteration-count: 3; */
+            /* animation-fill-mode: forwards; */
+            /* animation-delay: 2s; */
+            /* animation-timing-function: ease-in-out; */
+            animation: harry1 3s forwards ease-in-out;
+        
+
+
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Loading Animation</h1>
+    <div class="container">
+
+        <div class="box">
+
+        </div>
+    </div>
+
+
+    <br>
+    <div class="loader"></div>
+</body>
+
+</html>
